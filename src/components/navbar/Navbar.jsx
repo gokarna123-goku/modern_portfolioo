@@ -19,10 +19,10 @@ const Navbar = () => {
             <div className='flex items-center gap-8'>
                 <ul className="list-none md:text-base text-sm text-neutral-400 font-medium flex items-center md:gap-x-8 gap-x-4">
                     <li>
-                        <Link to={"/"} className="hover:text-neutral-500 ease-in-out duration-300">Projects</Link>
+                        <Link to={"/projects"} className="hover:text-neutral-500 ease-in-out duration-300">Project</Link>
                     </li>
                     <li>
-                        <Link to={"/about"} className="hover:text-neutral-500 ease-in-out duration-300">Blogs</Link>
+                        <Link to={"/articles"} className="hover:text-neutral-500 ease-in-out duration-300">Article</Link>
                     </li>
                     <li>
                         <Link to={"/about"} className="hover:text-neutral-500 ease-in-out duration-300">About Me</Link>
