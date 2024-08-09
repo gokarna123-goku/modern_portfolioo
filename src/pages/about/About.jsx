@@ -7,6 +7,8 @@ import { RiNextjsLine } from 'react-icons/ri'
 import { SiDjango } from 'react-icons/si'
 import { LiaHandPointer } from "react-icons/lia";
 
+import AboutImg from "../../assets/about.png"
+
 const About = () => {
     return (
         <Layout className='md:py-[7ch] py-6 w-full h-auto space-y-16'>
@@ -16,12 +18,19 @@ const About = () => {
                     About Me
                 </h1>
                 <div className="space-y-5">
-                    <p className="text-lg text-neutral-500 font-normal">
-                        Hey, We are G-Tech Official Organization. We have been working on the software industry since 2022 and we are doing it on remote work. We have also a YouTube channel for the websites tutorial. Our Organization work based on the clients and their requirements. Very soon we will be launching the AI powered website for solving the real world problems.
-                    </p>
-                    <p className="text-lg text-neutral-500 font-normal">
-                        My website is free of ads, affiliate links, tracking, analytics, sponsored posts, and paywalls. I created it as a platform for self-expression and to share my knowledge with the world. My hope is to encourage others to carve out their own creative space online, contributing to the fight against the degradation of the internet.
-                    </p>
+                    <div className="w-full flex items-center gap-14 flex-wrap">
+                        <div className="md:w-64 w-full h-auto flex items-center justify-center border border-neutral-900/40 bg-neutral-900/20 rounded-lg">
+                            <img src={AboutImg} alt="" className="w-full aspect-square rounded-xl object-cover object-center" />
+                        </div>
+                        <div className="flex-1 space-y-5">
+                            <p className="text-lg text-neutral-500 font-normal">
+                                Hey, We are G-Tech Official Organization. We have been working on the software industry since 2022 and we are doing it on remote work. We have also a YouTube channel for the websites tutorial. Our Organization work based on the clients and their requirements.
+                            </p>
+                            <p className="text-lg text-neutral-500 font-normal">
+                                My website is free of ads, affiliate links, tracking, analytics, sponsored posts, and paywalls. I created it as a platform for self-expression and to share my knowledge with the world.
+                            </p>
+                        </div>
+                    </div>
                     <div className="w-full flex items-center justify-between bg-green-900/5 border border-green-900/60 hover:border-green-900/80 md:px-6 px-3 py-3 rounded-lg group cursor-pointer">
                         <p className="md:text-lg text-sm text-neutral-400 font-normal">
                             I am available for remote work.
@@ -31,6 +40,8 @@ const About = () => {
                         </Link>
                     </div>
                     <p className="text-lg text-neutral-500 font-normal">
+                        Very soon we will be launching the AI powered website for solving the real world problems.
+                        My hope is to encourage others to carve out their own creative space online, contributing to the fight against the degradation of the internet.
                         I don't post too often, so feel free to subscribe to the RSS feed for updates when I do.
                     </p>
                 </div>

@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'rotate-border': 'rotate 3s linear infinite',
+      },
+    },
   },
   plugins: [],
 }

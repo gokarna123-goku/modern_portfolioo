@@ -9,9 +9,9 @@ const Navbar = () => {
             <Link to={"/"} className='flex flex-col'>
                 <span className="md:text-[0.65rem] text-[0.5rem] text-neutral-400 -mb-1.5">localhost:</span>
                 <h1 className='md:text-2xl text-lg font-bold text-neutral-500 flex'>
-                    <span className="text-violet-500">3</span>
-                    ( <span className="text-violet-500">0</span> )
-                    <sub className="text-violet-500">3</sub>
+                    <span className="text-green-500">3</span>
+                    ( <span className="text-green-500">0</span> )
+                    <sub className="text-green-500">3</sub>
                 </h1>
             </Link>
 

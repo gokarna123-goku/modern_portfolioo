@@ -4,6 +4,7 @@ import { SiDjango } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaReact, FaWordpressSimple } from "react-icons/fa6";
+import { GoArrowUpRight } from "react-icons/go";
 
 import Profile from "../../assets/profile.png";
 
@@ -19,7 +20,7 @@ const Home = () => {
             <div className="w-full flex items-center justify-between gap-14 flex-wrap">
                 <div className="flex-1 h-auto space-y-10">
                     <h1 className="text-5xl text-neutral-100 font-bold">
-                        Hey, I'm <span className="text-violet-500">G-Tech</span>
+                        Hey, I'm <span className="gradient-text">G-Tech</span>
                     </h1>
                     <div className="space-y-6 md:pr-16 pr-0">
                         <p className="text-lg text-neutral-400 font-normal">
@@ -29,9 +30,14 @@ const Home = () => {
                             In my <Link to={"https://www.youtube.com/@g-techofficial"} target="_blank" className="inline-flex text-red-500">youtube channel</Link>, you can find lots of coding projects videos with free tutorials, sources codes, and about our ORG.
                         </p>
                     </div>
-                    <a href="" download={true} className="w-fit px-8 h-11 bg-neutral-900/50 shadow rounded-xl text-base text-neutral-100 font-normal flex items-center justify-center gap-x-2">
-                        Resume <HiOutlineDownload />
-                    </a>
+                    <div className="flex items-center gap-x-5">
+                        <a href="" download={true} className="w-fit px-8 h-11 bg-neutral-900/50 shadow rounded-xl text-base text-neutral-100 font-normal flex items-center justify-center gap-x-2">
+                            Resume <HiOutlineDownload />
+                        </a>
+                        <Link to={"/me"} className="text-base text-neutral-500 hover:text-green-600 font-medium flex items-center gap-x-1.5 ease-in-out duration-300 group">
+                            Read More <GoArrowUpRight className="text-xl group-hover:rotate-45 ease-in-out duration-500" />
+                        </Link>
+                    </div>
                 </div>
                 <div className="md:w-1/3 w-full h-auto flex justify-center items-center">
                     <div className="relative w-full aspect-square rounded-full glow-border">
@@ -60,7 +66,7 @@ const Home = () => {
                     <h1 className="text-3xl text-neutral-200 font-bold">
                         Projects
                     </h1>
-                    <Link to={"/products"} className="text-base text-neutral-400 font-normal">
+                    <Link to={"/projects"} className="text-sm text-neutral-400 font-normal hover:text-green-600 ease-in-out duration-300">
                         View All
                     </Link>
                 </div>
@@ -79,7 +85,7 @@ const Home = () => {
                     <h1 className="text-3xl text-neutral-200 font-bold">
                         Featured Article
                     </h1>
-                    <Link to={"/blogs"} className="text-base text-neutral-400 font-normal">
+                    <Link to={"/articles"} className="text-sm text-neutral-400 font-normal hover:text-green-600 ease-in-out duration-300">
                         View All
                     </Link>
                 </div>
