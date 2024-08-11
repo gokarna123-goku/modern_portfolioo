@@ -1,8 +1,11 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa6'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+    const location = useLocation();
+
+    const active = location.pathname;
     return (
         <nav className='w-full h-[8ch] bg-neutral-950 shadow-sm border-b border-neutral-900/50 lg:px-80 md:px-16 sm:px-7 px-4 flex items-center justify-between'>
             {/* Logo section */}
@@ -19,13 +22,13 @@ const Navbar = () => {
             <div className='flex items-center gap-8'>
                 <ul className="list-none md:text-base text-sm text-neutral-400 font-medium flex items-center md:gap-x-8 gap-x-4">
                     <li>
-                        <Link to={"/projects"} className="hover:text-neutral-500 ease-in-out duration-300">Project</Link>
+                        <Link to={"/projects"} className={`hover:text-neutral-500 ease-in-out duration-300 ${active === "/projects" ? "text-green-500" : "text-neutral-400"}`}>Project</Link>
                     </li>
                     <li>
-                        <Link to={"/articles"} className="hover:text-neutral-500 ease-in-out duration-300">Article</Link>
+                        <Link to={"/articles"} className={`hover:text-neutral-500 ease-in-out duration-300 ${active === "/articles" ? "text-green-500" : "text-neutral-400"}`}>Article</Link>
                     </li>
                     <li>
-                        <Link to={"/me"} className="hover:text-neutral-500 ease-in-out duration-300">About Me</Link>
+                        <Link to={"/me"} className={`hover:text-neutral-500 ease-in-out duration-300 ${active === "/me" ? "text-green-500" : "text-neutral-400"}`}>About Me</Link>
                     </li>
                 </ul>
 
