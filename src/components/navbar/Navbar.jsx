@@ -25,7 +25,7 @@ const Navbar = () => {
                         <Link to={"/projects"} className={`hover:text-neutral-500 ease-in-out duration-300 ${active === "/projects" ? "text-green-500" : "text-neutral-400"}`}>Project</Link>
                     </li>
                     <li>
-                        <Link to={"/articles"} className={`hover:text-neutral-500 ease-in-out duration-300 ${active === "/articles" ? "text-green-500" : "text-neutral-400"}`}>Article</Link>
+                        <Link to={"/articles"} className={`hover:text-neutral-500 ease-in-out duration-300 ${active === "/articles" || active === "/article-detail" ? "text-green-500" : "text-neutral-400"}`}>Article</Link>
                     </li>
                     <li>
                         <Link to={"/me"} className={`hover:text-neutral-500 ease-in-out duration-300 ${active === "/me" ? "text-green-500" : "text-neutral-400"}`}>About Me</Link>
