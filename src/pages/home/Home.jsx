@@ -20,7 +20,7 @@ const Home = () => {
             <div className="w-full flex items-center justify-between gap-14 flex-wrap">
                 <div className="flex-1 h-auto space-y-10">
                     <h1 className="text-5xl text-neutral-100 font-bold">
-                        Hey, I'm <span className="gradient-text">G-Tech</span>
+                        Hey, I'm <span className="gradient-text">Goku</span>
                     </h1>
                     <div className="space-y-6 md:pr-16 pr-0">
                         <p className="text-lg text-neutral-400 font-normal">
@@ -42,10 +42,11 @@ const Home = () => {
                 <div className="md:w-1/3 w-full h-auto flex justify-center items-center">
                     <div className="relative w-full aspect-square rounded-full glow-border">
                         <div className="absolute inset-0 rounded-full border-[6px] border-transparent animate-rotate-border" />
-                        <img src="https://images.unsplash.com/photo-1687278698468-d529a2bda16b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile img" className="w-full h-full rounded-full object-contain relative scale-110 bottom-3 right-2 z-10" />
+                        <img src={Profile} alt="profile img" className="w-full h-full rounded-full object-contain relative scale-110 bottom-3 right-2 z-10" />
                     </div>
                 </div>
             </div>
+
 
             {/* Some top Tech highlights */}
             <div className="w-full space-y-8">
